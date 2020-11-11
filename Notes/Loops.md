@@ -55,7 +55,25 @@ When talking about lists, two keywords pop-up when talking about loops.
         if num == 3:
             break
 
+        if num > 9:
+            continue
+
         print(num)
 ```
 
 * Continue - Continue is used when you detect some condition and do not want to execute a code block, but also want to keep iterating through the loop. So this keywork ignores the current codeblock but keeps moving through the loop.
+
+## Nested Loops
+Much like conditional statements, loops can be nested inside one another, and are constructed and behave just like other loops. 
+
+```python
+
+    length = 10
+    height = 10
+
+    for x in range(0, length):
+        for y in range(0, width):
+            pos = [x, y]
+            print(pos)
+
+```
